@@ -1,0 +1,23 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  links: Array<{ title: string; href: string; icon?: string }>;
+}
+const { links } = Astro.props;
+---
+
+<ul role="list" class="flex flex-col space-y-2 w-80 min-w-fit">
+  {
+    links.map((link) => (
+      <ul>
+        <a href={link.href}>
+          <div class="bg-blue-500 hover:bg-blue-600 flex justify-center h-10 items-center rounded">
+            {link.icon && <Icon class="size-6" name={link.icon} />}
+            <h1 class="pl-2">{link.title}</h1>
+          </div>
+        </a>
+      </ul>
+    ))
+  }
+</ul>
