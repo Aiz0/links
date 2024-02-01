@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Bluesky",
+    "href": "https://bsky.app/profile/aiz.moe",
+    "icon": "bluesky"
+  },
+  {
+    "title": "Github",
+    "href": "https://github.com/Aiz0",
+    "icon": "github"
+  },
+  {
+    "title": "Anilist",
+    "href": "https://anilist.co/user/Aizu/",
+    "icon": "anilist"
+  },
+  {
+    "title": "osu!",
+    "href": "https://osu.ppy.sh/users/7033637/",
+    "icon": "osu"
+  },
+  {
+    "title": "Element / Matrix",
+    "href": "https://matrix.to/#/@aiz:matrix.org",
+    "icon": "element"
+  }
+]
