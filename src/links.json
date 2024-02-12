@@ -5,6 +5,11 @@
     "icon": "bluesky"
   },
   {
+    "title": "Matrix",
+    "href": "https://matrix.to/#/@aiz:matrix.org",
+    "icon": "element"
+  },
+  {
     "title": "Github",
     "href": "https://github.com/Aiz0",
     "icon": "github"
@@ -18,10 +23,5 @@
     "title": "osu!",
     "href": "https://osu.ppy.sh/users/7033637/",
     "icon": "osu"
-  },
-  {
-    "title": "Matrix",
-    "href": "https://matrix.to/#/@aiz:matrix.org",
-    "icon": "element"
-  }
+  }  
 ]
