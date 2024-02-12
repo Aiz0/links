@@ -6,6 +6,9 @@ import favicons from "astro-favicons";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://links.aiz.moe',
+  build: {
+    inlineStylesheets: 'always'
+  },
   integrations: [
     tailwind(),
     icon({
