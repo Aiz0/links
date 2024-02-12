@@ -27,7 +27,8 @@ export default defineConfig({
       },
     }),
     favicons({
-      masterPicture: "./src/favicon.png"
+      masterPicture: "./src/favicon.png",
+      emitAssets: false,
     })
   ],
 });
