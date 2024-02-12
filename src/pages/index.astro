@@ -2,19 +2,16 @@
 import Layout from "../layouts/Layout.astro";
 import LinkList from "../components/LinkList.astro";
 import links from "../links.json";
-import { Image } from "astro:assets";
-import avatar from "../assets/avatar.png";
-const name = "Aiz";
+import Profile from "../components/Profile.astro";
 ---
 
 <Layout title="links">
-  <div class="flex flex-col items-center gap-8 p-8">
-    <Image
-      class="rounded-full ring-2 ring-white size-24"
-      src={avatar}
-      alt="Mashiro Shiina"
-    />
-    <h1 class="text-6xl drop-shadow-md">{name}</h1>
-    <LinkList links={links} />
+  <div class="flex justify-center items-center h-full">
+    <div
+      class="flex flex-col gap-8 items-center p-8 w-96 bg-gradient-to-br from-indigo-600 to-indigo-800 rounded-xl"
+    >
+      <Profile />
+      <LinkList links={links} />
+    </div>
   </div>
 </Layout>

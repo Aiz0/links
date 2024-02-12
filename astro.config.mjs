@@ -1,6 +1,7 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
+import favicons from "astro-favicons";
 
 // https://astro.build/config
 export default defineConfig({
@@ -21,5 +22,8 @@ export default defineConfig({
         ],
       },
     }),
+    favicons({
+      masterPicture: "./src/favicon.png"
+    })
   ],
 });

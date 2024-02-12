@@ -1,0 +1,16 @@
+---
+import { Image } from "astro:assets";
+import avatar from "../assets/avatar.png";
+const name = "Aiz";
+const description = "I write silly code sometimes~";
+---
+
+<div class="flex flex-col gap-8 items-center">
+  <Image
+    class="rounded-full ring-4 ring-white size-24 md:size-48"
+    src={avatar}
+    alt="Mashiro Shiina"
+  />
+  <h1 class="text-6xl drop-shadow-md">{name}</h1>
+  <p>{description}</p>
+</div>
