@@ -10,7 +10,7 @@ const { title } = Astro.props;
 <!doctype html>
 <html
   lang="en"
-  class="h-screen text-white bg-gradient-to-br from-blue-900 to-blue-950"
+  class="h-screen text-white bg-center bg-cover bg-main"
 >
   <head>
     <meta charset="UTF-8" />
@@ -19,7 +19,7 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="h-screen">
+  <body class="h-screen backdrop-blur">
     <slot />
   </body>
 </html>
