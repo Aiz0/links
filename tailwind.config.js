@@ -9,9 +9,6 @@ export default {
           'Roboto Condensed', ...defaultTheme.fontFamily.sans
         ]
       },
-      backgroundImage: {
-        'main': "url(background.png)"
-      }
     }
   },
   plugins: [],

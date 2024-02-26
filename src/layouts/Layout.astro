@@ -1,5 +1,7 @@
 ---
 import "@fontsource-variable/roboto-condensed";
+import { Image } from "astro:assets";
+import background from "../assets/background.png"
 interface Props {
   title: string;
 }
@@ -10,7 +12,7 @@ const { title } = Astro.props;
 <!doctype html>
 <html
   lang="en"
-  class="h-screen text-white bg-center bg-cover bg-main"
+  class="h-screen text-white"
 >
   <head>
     <meta charset="UTF-8" />
@@ -19,7 +21,8 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="h-screen backdrop-blur">
-    <slot />
+  <body class="h-screen">
+    <Image class="object-cover absolute h-screen" src={background} alt=""/>
+    <div class="h-screen backdrop-blur"><slot /></div>
   </body>
 </html>
