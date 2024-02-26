@@ -22,7 +22,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="h-screen">
-    <Image class="object-cover absolute h-screen" src={background} alt=""/>
+    <Image class="object-cover absolute w-screen h-screen" src={background} alt=""/>
     <div class="h-screen backdrop-blur"><slot /></div>
   </body>
 </html>
